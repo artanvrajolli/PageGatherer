@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Page Gatherer",
+  "version": "1.0.6",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "icons": {
+    "16":  "./icons/pageG16.png",
+    "48":  "./icons/pageG48.png",
+    "64":  "./icons/pageG64.png",
+    "128": "./icons/pageG128.png"
+  }
+}
