@@ -88,7 +88,7 @@ function getLinks() {
         // send message to content.js
         chrome.tabs.sendMessage(tabId, { message: "get_links" }, function (response) {
             // get response
-            let { links } = response;
+            let { links } = response ?? { links: [] };
             // filter empty links
             links = links.filter(i => i !== "");
             // filter duplicate links
@@ -134,7 +134,7 @@ function getImages() {
         // send message to content.js
         chrome.tabs.sendMessage(tabId, { message: "get_images" }, function (response) {
             // get response
-            let { images } = response;
+            let { images } = response ?? { images: [] };
             // filter empty links
             images = images.filter(i => i !== "");
             // filter duplicate links

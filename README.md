@@ -1,7 +1,11 @@
+
+
 # Page Gatherer
 
 Page Gatherer is a browser extension that helps you gather and view all the links and images from a webpage,
 It is available for chromium-based browsers like Google Chrome, Microsoft Edge, and Opera.
+
+You can download the extension from [Chrome web store](https://chromewebstore.google.com/detail/page-gatherer/cmiaechgiiaiaooakckgpfibjlnhdpab).
 
 
 ## Features
